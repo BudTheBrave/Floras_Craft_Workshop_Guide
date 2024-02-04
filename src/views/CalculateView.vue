@@ -504,7 +504,7 @@ function calculateBreadUsage() {
 
     console.log(estimatedBreadCost.value, "est")
 
-
+    estimatedBreadCost.value = 0;
     estimatedBreadCost.value += Math.ceil(totalBiscuit.value / averages['Biscuit'])
     estimatedBreadCost.value += Math.ceil(totalPizzaCrust.value / averages['Pizza Crust'])
     estimatedBreadCost.value += Math.ceil(totalSeedling.value / averages['Seedling'])
