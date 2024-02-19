@@ -90,7 +90,8 @@
             />
         </div>
         <button style="margin-top: 10px;"  @click="calculateBreadUsage()">Calculate estimated bread usage</button>
-        <p v-if="breadToggle != 0">{{ estimatedBreadCost }} bread</p>
+        <p v-if="breadToggle != 0">~{{ estimatedBreadCost }} bread || {{ estimatedBreadTime }}</p>
+        <p> Time does not include items gotten from glove or ice cube</p>
         <hr>
         <button @click="clearItems()">Clear</button>
     </div>
@@ -131,51 +132,17 @@ const totalFreshBread = ref(0);
 
 // my buildings vars
 
-const bakingBuilding = ref("");
-const fieldsBuilding = ref("");
-const catBedsBuilding = ref("");
-const sewingBuilding = ref("");
+const bakingBuilding = ref("Premium Oven");
+const fieldsBuilding = ref("Flowering Field");
+const catBedsBuilding = ref("Catland");
+const sewingBuilding = ref("Mini Sewing Machine");
 
 const estimatedBreadCost = ref(0);
+const estimatedBreadTime = ref("")
 const breadToggle = ref(false)
 
 
 const dropDownConfig = [
-    "Grain",
-    "Flour", 
-    "Fine Flour",
-    "Dough",
-    "Fermented Dough",
-    "Sliced Bread",
-    "Bread Basket",
-    "Premium Oven",
-    "Clay",
-    "Fertile Clay",
-    "Field",
-    "Fenced Field",
-    "Planting Field",
-    "Seeding Field",
-    "Flowering Field",
-    "Leather Collar",
-    "Bowknot Collar",
-    "Cat Food Bowl",
-    "Cute Cat Food Bowl",
-    "Pet Coat",
-    "Cat Scratcher",
-    "Warm Cat Bed",
-    "Cat Cushion",
-    "Cute Cat Cushion",
-    "Catland",
-    "Sewing Needle",
-    "Sewing Thread",
-    "Yarn Balls",
-    "Sewing Thread Kit",
-    "Sewing Thread Case",
-    "Double Sewing Thread Case",
-    "Sewing Thread Basket",
-    "Mini Sewing Machine",
-    "Manual Sewing Machine",
-    "Automatic Sewing Machine",
     "Biscuit",
     "Sandwich Biscuits",
     "Sandwich Biscuit Selection",
@@ -245,16 +212,7 @@ const dropDownConfig = [
     "Black Leather Jacket",
     "Custom Suit",
     "Vintage Tailcoat",
-    "Ceremony Tuxedo",
-    "Workshop Orange Chest",
-    "Rare Orange Chest",
-    "Precious Orange Chest",
-    "Workshop Pink Chest",
-    "Rare Pink Chest",
-    "Precious Pink Chest",
-    "Fresh Bread",
-    "Croissant",
-    "Bread Basket1"
+    "Ceremony Tuxedo"
 ]
 const bakingConfig = [
     "Fermented Dough",
@@ -513,7 +471,14 @@ function calculateBreadUsage() {
     estimatedBreadCost.value += Math.ceil(totalCloth.value / averages['Cloth'])
     estimatedBreadCost.value += Math.ceil(totalWhiteTShirt.value / averages['White T-Shirt'])
     
-
+    let totalTimeM = estimatedBreadCost.value * 2;
+    if((totalTimeM / 60) >= 1){
+        if((totalTimeM / (60*24)) >= 1){
+            estimatedBreadTime.value = `${Math.floor(totalTimeM / (60*24)) % 365}D `;
+        }
+        estimatedBreadTime.value += `${Math.floor(totalTimeM / 60) % 24}H `;
+    }
+    estimatedBreadTime.value += `${totalTimeM % 60}M`
 
 }
 

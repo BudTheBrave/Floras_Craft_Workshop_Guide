@@ -211,7 +211,7 @@ watch(
             }
           "
         >
-          <slot name="option" v-bind="opt">{{ opt["text"] }}</slot>
+          <slot name="option" v-bind="opt">{{ opt["text"] }} </slot>
         </li>
       </ul>
     </div>

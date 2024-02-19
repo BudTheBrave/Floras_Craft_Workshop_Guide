@@ -147,7 +147,7 @@
                             <td>79,118 coins</td>
                         </tr>
                         <tr>
-                            <td>19 -> 20</td>
+                            <td>Current Max <p>19 -> 20</p></td>
                             <td>Limited Mousse Cake x5<br>
                                 Pet Snack Platter x5<br>
                                 Ceremony Tuxedo x5
@@ -155,7 +155,8 @@
                             <td>98,000 coins</td>
                         </tr>
                         <tr>
-                            <td>20 -> 21</td>
+                            <td>In code but DNE 
+                                <p>20 -> 21</p></td>
                             <td>Pink Lolita<br>
                                 Pet Snack Platter x5<br>
                                 Exuisite Photo Frame x3<br>
@@ -201,27 +202,24 @@
                 tap 9 then merge. This is because unlike regualr prodection items, these limited production items dissapear if all productions are used.
                 <br>
                 <b>
-                    IMPORTANT: this does NOT apply to the chests
-                    you get from the house. tap them so there is 5 remaining then merge
+                    IMPORTANT: do not merge chests, you will get plenty of production items while using cubes and gloves. you get a higher chance of bread the lower the level.
                 </b> 
-                <br>
-                Reason is beacuse the tap number 
-                does not reset between merges. 
-                EX: you have two lv 1 chests, you tap 
-                them both 9 times, leaving 1 remaining on 
-                both, apon merging you can told tap the 
-                new level 2 chest twice before it disappears.
-                the max tap is 5, so if you leave 5 remaing 
-                on both the chests the next level will be max of 10
             </li>
             <li>
-                For max efficeny, log on every 3 hours.
-                bread recovers every 2 minutes with a max of 100.
-                so you'll max out after 200 minutes or 3 hours 20 min
+                <b>IMPORTANT: do not merge sewing station to max. merge to level 8, mini sewing machine. </b>
+                <span>This is because the average cloth you get from max is 0.45 per bread while the mini sewing machine is .8 cloth per bread</span>
+            </li>
+            <li>
+                For max efficeny, log on every 18 hours, this is the cooldown to max the sewing stations which will provide the hardest item to get.
+                bread recovers every 2 minutes with a max of 720.
+                so you'll max out after 24 hours. 
+            </li>
+            <li>
+                It is worth buying bread every day for an extra 150 bread a day. Most of the time the visit equitment you get will out weigh the cost.
             </li>
             <li>
                 Visit Equipment:
-                    I found using then aquired is most useful, apart from mystical hourglass.
+                    I found using when aquired is most useful, apart from mystical hourglass.
                     use hourglass when needing cooldown of sewing Machine
                     For hourglass mini game rewards goes as follows <br>
                     0-99 points: 5% reduction<br>
